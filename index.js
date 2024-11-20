@@ -8,12 +8,12 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-const url = "mongodb://192.168.37.93:27017/Travels";
+// const url = "mongodb://192.168.37.93:27017/Travels";
 
 mongoose
   .connect(
-    // "mongodb+srv://shekarraju8:Shekar@cluster0.qkbxoh7.mongodb.net/chat?retryWrites=true&w=majority"
-    url,
+    "mongodb+srv://shekarraju8:Shekar@cluster0.qkbxoh7.mongodb.net/chat?retryWrites=true&w=majority",
+    // url,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
